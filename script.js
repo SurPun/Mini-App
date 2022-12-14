@@ -40,7 +40,7 @@ for (let i = 0; i < 20; i++) {
 
   if (categoryData) {
     displayList.innerHTML = `
-    <h2><a href="/results.html?category=${categoryData}&logo=${logoName}&colour=${colourData}">${categoryData}</a></h2>
+    <h2><a href="/Mini-App/results.html?category=${categoryData}&logo=${logoName}&colour=${colourData}">${categoryData}</a></h2>
     <button class="delBtn" onclick="clearStorage()">Delete</button>
     <span></span>
     `;
