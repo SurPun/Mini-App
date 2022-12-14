@@ -33,23 +33,32 @@
 
         <!-- Logo -->
         <label for="logo"
-          >Logo <i class="fa fa-plus" style="cursor: pointer"></i>
+          >Icon <i class="fa fa-plus" style="cursor: pointer"></i>
         </label>
         <input
           type="file"
           id="logo"
           name=""
           style="display: none; visibility: none"
-          onchange="getIcon(this.value)"
         />
 
-        <!-- Icon / Colour -->
-        <select>
+        <!-- Colour -->
+        <select id="colour-select" onchange="getColour(this.value)">
           <option value="" selected disabled hidden>-- Select Colour --</option>
+          <option>Default</option>
+          <option>Red</option>
+          <option>Blue</option>
+          <option>Pink</option>
+          <option>Grey</option>
+          <option>Purple</option>
         </select>
 
         <div id="display-logo">IP...</div>
+
+        <button>Next</button>
       </form>
+
+      <div class="prev-catagory"></div>
 
       <div></div>
     </main>
