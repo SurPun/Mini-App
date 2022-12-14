@@ -19,51 +19,49 @@
     <header></header>
 
     <main>
-      <h1>Add to inventory</h1>
+      <h1>Mini-App</h1>
 
-      <form>
-        <label for="category">Create a new category</label>
+      <form action="results.html" method="GET" onsubmit="saveData()">
+        <label for="category" id="category">Create a new category</label>
         <br />
         <input
           type="text"
-          id="fname"
+          id="category-name"
           name="category"
           placeholder="e.g. Merch"
+          required
         /><br />
 
         <!-- Logo -->
         <label for="logo"
-          >Icon <i class="fa fa-plus" style="cursor: pointer"></i>
-        </label>
+          ><i class="fa fa-plus" style="cursor: pointer"></i> Icon</label
+        >
         <input
           type="file"
           id="logo"
-          name=""
+          name="logo"
           style="display: none; visibility: none"
         />
+        <div id="display-logo-name">...</div>
 
         <!-- Colour -->
-        <select id="colour-select" onchange="getColour(this.value)">
+        <select id="colour-select" name="colour">
           <option value="" selected disabled hidden>-- Select Colour --</option>
-          <option>Default</option>
-          <option>Red</option>
-          <option>Blue</option>
-          <option>Pink</option>
-          <option>Grey</option>
-          <option>Purple</option>
+          <option id="red">Red</option>
+          <option id="blue">Blue</option>
+          <option id="pink">Pink</option>
+          <option id="grey">Grey</option>
+          <option id="purple">Purple</option>
         </select>
 
-        <div id="display-logo">IP...</div>
-
-        <button>Next</button>
+        <button value="Save" id="Save" data-theme="a">Next</button>
       </form>
 
-      <div class="prev-catagory"></div>
-
-      <div></div>
+      <!-- Display List -->
+      <div class="list-container"></div>
     </main>
 
-    <footer></footer>
+    <footer>Mini-App &copy; 2022</footer>
 
     <script src="script.js"></script>
   </body>
