@@ -6,8 +6,8 @@ Mini-App
 
 Your mini-app should take user input for
 
-- [ ] A category name
-- [ ] A category icon
+- [x] A category name
+- [x] A category icon
 - [ ] A category colour
 
 When the user clicks ‘Next’, it should display the recently added

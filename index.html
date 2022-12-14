@@ -4,13 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Mini-App</title>
   </head>
   <body>
     <header></header>
 
-    <main></main>
+    <main>
+      <h1>Add to inventory</h1>
+
+      <form>
+        <label for="category">Create a new category</label>
+        <br />
+        <input
+          type="text"
+          id="fname"
+          name="category"
+          placeholder="e.g. Merch"
+        /><br />
+
+        <!-- Logo -->
+        <label for="logo"
+          >Logo <i class="fa fa-plus" style="cursor: pointer"></i>
+        </label>
+        <input
+          type="file"
+          id="logo"
+          name=""
+          style="display: none; visibility: none"
+          onchange="getIcon(this.value)"
+        />
+
+        <!-- Icon / Colour -->
+        <select>
+          <option value="" selected disabled hidden>-- Select Colour --</option>
+        </select>
+
+        <div id="display-logo">IP...</div>
+      </form>
+
+      <div></div>
+    </main>
 
     <footer></footer>
 
